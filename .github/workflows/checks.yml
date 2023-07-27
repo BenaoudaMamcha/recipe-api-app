@@ -2,9 +2,6 @@ name: Checks
 
 on: [push]
 
-permissions:
-  contents: read
-
 jobs:
   test-lint:
     name: Test and Lint

@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: action/checkout@v2
         with:
-          token: ${{ secrets.YOUR_CUSTOM_GITHUB_TOKEN }}
+          token: ${{ secrets.API_GITHUB_TOKEN }}
       - name: Test
         run: docker-compose run --rm app sh -c "python manage.py test"
       - name: Lint

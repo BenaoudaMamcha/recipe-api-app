@@ -16,6 +16,8 @@ jobs:
         uses: action/checkout@v2
         with:
           token: ${{ secrets.API_GITHUB_TOKEN }}
+          repository: BenaoudaMamcha/recipe-api-app
+          ref: master
       - name: Test
         run: docker-compose run --rm app sh -c "python manage.py test"
       - name: Lint
